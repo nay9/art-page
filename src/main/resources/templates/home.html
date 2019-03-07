@@ -11,22 +11,22 @@
   <header>
   <h1>Welcome To My Gallery</h1>
   </header>
-  <main class="wrapper">
-    <section class="box left">
-      <h3>Browse By Style</h3>
-      <section th:each="art : ${art}">
-        <p th:text="${art.artStyle}">inks</p>
-      </section>
-    </section>
+  <main class="big-box">
+    <section class="medium-box">
+        <div class="wrapper">
     <h3>Lorem ipsum dolor sit amet, et vis liber putent reprehendunt, suas numquam consetetur eos at. Ei vim scripta moderatius, ut duo partiendo vituperata. Homero repudiare referrentur ut sed, ius cu nostrum inciderint. Et liber officiis omittantur eos. Eu usu gubergren conceptam honestatis, per tale accusata accommodare ad, accusata adversarium ne sit.</h3>
 
+    </div>
+      </section>
     </section>
+
+  </section>
   </main>
-  <main class="artclips">
+  <section class="artclips">
     <section th:each="art : ${art}">
         <figure><img th:src="@{/images/{image}(image=${art.artImage})}">
         </figure>
       <p th:text="${art.artTitle}">Title</p>
-  </main>
+  </section>
 </body>
 </html>

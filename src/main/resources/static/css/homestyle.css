@@ -3,18 +3,34 @@ body {
   background-color: #C0C0CB;
 }
 
+header {
+  background-color: blue;
+  border-color: black;
+  border-style: solid;
+  border-width: 10px;
+  width: 100%; 
+}
+
 .wrapper {
+  display: flexbox;
   border-color: darkred;
   border-style: solid;
   border-width: 10px;
   margin: 10px;
-  margin-top: 4px;
-  padding-left: 30px;
-  padding-right: 30px;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
 }
 
+.big-box{
+  display: flex;  
+}
+
+.medium-box{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-column-gap: 2rem;
+}
 img {
   width: 250px;
   height: 250px;
@@ -23,4 +39,8 @@ img {
 .artclips {
   display: flex;
   flex-direction: row;
+}
+
+
+@media(max-width: 950px){
 }
