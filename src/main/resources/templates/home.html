@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/homestyle.css">
+  <title>Anna's Gallery</title>
+</head>
+<body>
+  <header>
+  <h1>Welcome To My Gallery</h1>
+  </header>
+  <main class="wrapper">
+    <section class="box left">
+      <h3>Browse By Style</h3>
+      <section th:each="art : ${art}">
+        <p th:text="${art.artStyle}">inks</p>
+      </section>
+    </section>
+    <h3>Lorem ipsum dolor sit amet, et vis liber putent reprehendunt, suas numquam consetetur eos at. Ei vim scripta moderatius, ut duo partiendo vituperata. Homero repudiare referrentur ut sed, ius cu nostrum inciderint. Et liber officiis omittantur eos. Eu usu gubergren conceptam honestatis, per tale accusata accommodare ad, accusata adversarium ne sit.</h3>
+
+    </section>
+  </main>
+  <main class="artclips">
+    <section th:each="art : ${art}">
+        <figure><img th:src="@{/images/{image}(image=${art.artImage})}">
+        </figure>
+      <p th:text="${art.artTitle}">Title</p>
+  </main>
+</body>
+</html>

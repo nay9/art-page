@@ -1,0 +1,26 @@
+body {
+  font: 20px/1.618 sans-serif;
+  background-color: #C0C0CB;
+}
+
+.wrapper {
+  border-color: darkred;
+  border-style: solid;
+  border-width: 10px;
+  margin: 10px;
+  margin-top: 4px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+.artclips {
+  display: flex;
+  flex-direction: row;
+}
